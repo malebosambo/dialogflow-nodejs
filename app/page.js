@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -90,6 +91,15 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1">
+      </script>
+      <df-messenger
+        intent="WELCOME"
+        chat-title="QandA"
+        agent-id="979dc3fb-61fc-41c5-a0dc-9634f0b987ca"
+        language-code="en"
+      ></df-messenger>
     </main>
+    
   );
 }
