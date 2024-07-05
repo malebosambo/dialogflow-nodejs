@@ -11,6 +11,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <style>
+          dfmessenger {
+            --df-messenger-bot-message: grey;
+            --df-messenger-button-titlebar-color: sandybrown;
+            --df-messenger-button-titlebar-font-color: white;
+            --df-messenger-chat-background-color: silver;
+            --df-messenger-font-color: white;
+            --df-messenger-input-box-color: white;
+            --df-messenger-input-font-color: black;
+            --df-messenger-input-placeholder-font-color: lightgrey;
+            --df-messenger-minimized-close-icon-color: white;
+            --df-messenger-send-icon: black;
+            --df-messenger-user-message: purple;
+          }
+        </style>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
