@@ -8,7 +8,8 @@ export default function Home() {
       <div>
         <h1>Dialogflow ES</h1>
         <hr /><br />
-        <p>The chatbot on this page has been implemented using an iframe.</p>
+        <p>The chatbot on this page has been implemented using an iframe.</p><br />
+        <p>The iframe interface is sourced by a script and is controlled using properties and css variables.</p>
       </div>
       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1">
       </script>
