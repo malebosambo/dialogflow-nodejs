@@ -31,19 +31,23 @@ df-messenger-es {
     padding: 10px 50px;
   }
 
-  .Menu {
+  .Navigation {
     display: flex;
     flex-direction: row;
   }
 
-  .Menu, a {
+  .Navigation, a {
     color: black;
     margin-left: 10px;
     padding: 5px;
     text-decoration: none;
-  }
+  }  
 
   .Mobile_Menu {
     display: none;
+  }
+
+  .Selected:link:active {
+     color: orange;
   }
 }
