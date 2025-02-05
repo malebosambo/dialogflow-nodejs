@@ -1,14 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
+  
   return (
-    <main className={styles.agent_es}>
+    <main className="Page">
       <div>
         <h1>Dialogflow ES</h1>
         <hr /><br />
         <p>The chatbot on this page has been implemented using an iframe.</p><br />
-        <p>The iframe interface is sourced by a script and is controlled using properties and css variables.</p>
       </div>
       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
       <df-messenger
