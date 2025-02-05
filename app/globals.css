@@ -1,53 +1,123 @@
 df-messenger-es {
-   --df-messenger-bot-message: #878fac;
-   --df-messenger-button-titlebar-color: #df9b56;
-   --df-messenger-chat-background-color: #fafafa;
-   --df-messenger-font-color: white;
-   --df-messenger-send-icon: #878fac;
-   --df-messenger-user-message: #479b3d;
-  }
+  --df-messenger-bot-message: #878fac;
+  --df-messenger-button-titlebar-color: #df9b56;
+  --df-messenger-chat-background-color: #fafafa;
+  --df-messenger-font-color: white;
+  --df-messenger-send-icon: #878fac;
+  --df-messenger-user-message: #479b3d;
+}
   
-  df-messenger-cx {
-    z-index: 999;
-    position: fixed;
-    --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #f3f6fc;
-    --df-messenger-message-user-background: #d3e3fd;
-    --df-messenger-message-bot-background: #fff;
-    bottom: 16px;
-    right: 16px;
+df-messenger-cx {
+  z-index: 999;
+  position: fixed;
+  --df-messenger-font-color: #000;
+  --df-messenger-font-family: Google Sans;
+  --df-messenger-chat-background: #f3f6fc;
+  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-bot-background: #fff;
+  bottom: 16px;
+  right: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
   }
 
-.agent_es {
-  padding: 50px;
-} 
+  .Menu {
+    display: flex;
+    flex-direction: row;
+  }
 
-@media only screen and (min-width: 993px) and (max-width: 1400px) {
+  .Menu, a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .Page {
+    margin: 10px 5px;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+  .Header {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Menu, a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+
+  .Page {
+    margin: 20px 10px;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
   .Header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 10px;
   }
 
-  .Navigation {
+  .Menu {
     display: flex;
     flex-direction: row;
   }
 
-  .Navigation, a {
+  .Menu, a {
     color: black;
-    margin-left: 10px;
-    padding: 5px;
+    padding: 5px 15px;
     text-decoration: none;
-  }  
-
-  .Mobile_Menu {
-    display: none;
   }
 
-  .Selected:link:active {
-     color: orange;
+  .Page {
+    margin: 30px 15px;
   }
+  
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+
+  .Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .Menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Menu, a {
+    color: black;
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+
+  .Page {
+    margin: 40px 15px;
+  }
+
 }
