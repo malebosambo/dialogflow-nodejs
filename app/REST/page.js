@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 
 export default function Rest() {
@@ -14,7 +16,7 @@ export default function Rest() {
   }
   
   return (
-    <main>
+    <main className="Page">
       <div>
         <h1>Dialogflow API</h1>
         <hr /><br />
